@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Weather Dashboard
+        </h1>
+    </header>
+    <main class="container">
+        <!-- location search bar -->
+        <div class="location-input">
+            <form>
+                <label for="location">Search for a City:</label>
+                <input type="text" placeholder="San Diego" id="location" name="location" class="city-input" />
+                <button type="submit" id="search-btn">
+                    Search
+                </button>
+            </form>
+        </div>
+
+        <hr>
+        <!-- searches -->
+        <div class="recent-searches">
+            <div id="city-searches" class="city-list"></div>
+        </div>
+
+        <!-- current weather display -->
+        <div class="forecast-display" id="current-display">
+            <div class="display">
+                <div id="current-weather"></div>
+            </div>
+        </div>
+
+        <!-- 5 day forecast -->
+        <div id="current-forecast" class="forecast"></div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
